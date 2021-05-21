@@ -37,7 +37,7 @@ val myModule = module {
 ```
 
 :::caution
- Even if the "destrutured" declaration is more conveient and readable, it's not type safe. Kotlinb won't detect that passed type are in good orders if you have several values
+ Even if the "destructured" declaration is more conveient and readable, it's not type safe. Kotlin won't detect that passed type are in good orders if you have several values
 :::
 
 
