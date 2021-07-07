@@ -9,7 +9,7 @@ Android components are mainly managed by their lifecycle: we can't directly inst
 make all creation and management for us, and make callbacks on methods: onCreate, onStart...
 
 That's why we can't describe our Activity/Fragment/Service in a Koin module. We need then to inject dependencies into properties and also
-respect the lifecycle: Components related to the UI parts must be released on soon as we don't need them anymore.
+respect the lifecycle: Components related to the UI parts must be released as soon as we don't need them anymore.
 
 Then we have:
 
