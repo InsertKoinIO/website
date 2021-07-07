@@ -10,8 +10,8 @@ Let's go with the following components to chain : a Controller, a Service and a 
 Ktor Controller (http) -> Service (business) -> Repository (data)
 ```
 
-- a Ktor Controller (routing function) to handle http route and return result from the service
-- a Service to *handle business* and take data from repository
+- a Ktor Controller (routing function) to handle http routing and return a result from the service
+- a Service to *handle business logic* and take data from the repository
 - a Repository to provide data
 
 Let's go 🚀
@@ -19,7 +19,7 @@ Let's go 🚀
 ## Get the code
 
 :::info
-[The source code is available at on Github](https://github.com/InsertKoinIO/koin/tree/3.0.1/quickstart/getting-started-koin-ktor)
+[The source code is available on Github.](https://github.com/InsertKoinIO/koin/tree/3.0.1/quickstart/getting-started-koin-ktor)
 :::
 
 ## Gradle Setup
@@ -51,7 +51,7 @@ class HelloServiceImpl(val helloRepository: HelloRepository) : HelloService {
 }
 ```
 
-and our Repository, which provide data:
+and our Repository, which provides data:
 
 ```kotlin
 class HelloRepository {
@@ -61,7 +61,7 @@ class HelloRepository {
 
 ## HTTP Controller
 
-Finally, we need an HTTP Controller to create the HTTP Route. In Ktor is will be expressed through an Ktor extension function:
+Finally, we need an HTTP Controller to create the HTTP Route. In Ktor, this can be expressed through a Ktor extension function:
 
 ```kotlin
 fun Application.main() {
@@ -105,7 +105,7 @@ Let's assemble our components with a Koin module:
 
 ```kotlin
 val helloAppModule = module {
-    single<HelloService> { HelloServiceImpl(get()) } // get() Will resolve HelloRepository
+    single<HelloService> { HelloServiceImpl(get()) } // get() will resolve HelloRepository
     single { HelloRepository() }
 }
 ```
