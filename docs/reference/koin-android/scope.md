@@ -98,7 +98,7 @@ class MyActivity : AppCompatActivity, AndroidScopeComponent {
 }
 ```
 
-We can also setup a scope, tied to a ViewModel with teh following:
+We can also setup a scope, tied to a ViewModel with the following:
 
 ```kotlin
 class MyActivity : AppCompatActivity, AndroidScopeComponent {
