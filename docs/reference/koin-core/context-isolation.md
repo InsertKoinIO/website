@@ -27,7 +27,7 @@ val myApp = koinApplication {
 }
 ```
 
-You will have to keep your `myApp` instance avilable in your library and pass it to your custom KoinComponent implementation:
+You will have to keep your `myApp` instance available in your library and pass it to your custom KoinComponent implementation:
 
 ```kotlin
 // Get a Context for your Koin instance
