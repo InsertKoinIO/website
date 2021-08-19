@@ -56,7 +56,6 @@ val myModule = module {
 
 Injection parameters are parameters passed through the resolution API with the `parametersOf()` function (each value seperated by comma): 
 
-```kotlin
 class MyComponent : View, KoinComponent {
 
     val a : A ...
