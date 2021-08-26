@@ -38,7 +38,7 @@ By default, By default Koin use the `EmptyLogger`. You can use directly the `Pri
 
 ```kotlin
 startKoin{
-    logger(LEVEL.INFO)
+    printLogger(LEVEL.INFO)
 }
 ```
 
