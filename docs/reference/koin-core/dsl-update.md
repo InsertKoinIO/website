@@ -27,5 +27,5 @@ module {
 ```
 
 :::note
- This way of writing will detect your primary constructor. If you need to to detect default values, please use `@JvmOverLoad` on your constructor.
+ This way of writing will detect your primary constructor. If you need to detect default values, please use `@JvmOverLoad` on your constructor.
 :::
