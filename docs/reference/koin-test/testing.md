@@ -4,10 +4,10 @@ title: Injecting in Tests
 
 ## Making your test a KoinComponent with KoinTest
 
-By tagging your class `KoinTest`, your class become a `KoinComponent` and bring you:
+By tagging your class with `KoinTest`, your class becomes a `KoinComponent` and that brings you:
 
-* `by inject()` & `get()` - function to retrieve yoru instances from Koin
-* `checkModules` - help you check your configuration
+* `by inject()` & `get()` - functions to retrieve your instances from Koin
+* `checkModules` - helps you check your configuration
 * `declareMock` & `declare` - to declare a mock or a new definition in the current context
 
 ```kotlin
@@ -156,7 +156,7 @@ Koin offers a way to test if you Koin modules are good: `checkModules` - walk th
 
 ## Starting & stopping Koin for your tests
 
-Take attention to stop your koin instance (if you use `startKoin` in your tests) between every test. Else be sure to use `koinApplication`, for local koin instances or `stopKoin()` to stop the current global instance.
+Take attention to stop your Koin instance (if you use `startKoin` in your tests) between every test. Else be sure to use `koinApplication` for local Koin instances or use `stopKoin()` to stop the current global instance.
 
 ## Testing with JUnit5
 JUnit 5 support provides Extensions that will handle the starting and stopping of Koin context.
@@ -230,7 +230,7 @@ class MockExtensionTests: KoinTest {
 ```
 
 ### Getting the created Koin instances 
-You can also get the created koin context as a function parameter. This can be achieved by adding
+You can also get the created Koin context as a function parameter. This can be achieved by adding
  a function parameter to the test function.
 
 ```kotlin
