@@ -18,7 +18,7 @@ Be sure to load properties at Koin start:
 
 ```kotlin
 startKoin {
-    // Load properties from the default location
+    // Load properties from the default location (including file name)
     // (i.e. `/src/main/resources/koin.properties`)
     fileProperties()
 }
